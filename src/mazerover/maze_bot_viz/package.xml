@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>maze_bot_viz</name>
+  <version>0.0.0</version>
+  <description>
+    Visualization launch files and RViz configurations for Leo Rover (Maze Rover)
+  </description>
+
+  <maintainer email="jagadeeshanmsj@gmail.com">jaga-matrix</maintainer>
+  <author email="jagadeeshanmsj@gmail.com">jaga-matrix</author>
+
+  <license>GPLv3</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>xacro</exec_depend>
+
+  <exec_depend>maze_bot_description</exec_depend>
+</package>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>maze_bot_monitor</name>
+  <version>0.0.0</version>
+  <description>
+    The package to monitor the event and log during the competition
+  </description>
+
+  <maintainer email="jagadeeshanmsj@gmail.com">jaga-matrix</maintainer>
+  <author email="jagadeeshanmsj@gmail.com">jaga-matrix</author>
+
+  <license>GPLv3</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>rospy</exec_depend>
+
+</package>

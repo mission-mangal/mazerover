@@ -1,0 +1,7 @@
+<launch>
+
+    <include file="$(find maze_bot_monitor)/launch/collision_detector.launch" />
+    <node pkg="maze_bot_control" name="mazerover_cpp" type="mazerover_cpp" />
+    <include file="$(find maze_bot_monitor)/launch/collision_detector.launch" />
+
+</launch>

@@ -1,0 +1,9 @@
+<launch>
+
+    <!-- <include file="$(find maze_bot_control)/launch/maze1.launch"/> -->
+    
+    <include file="$(find maze_bot_teleop)/launch/key_teleop.launch" />
+
+    <include file="$(find maze_bot_monitor)/launch/collision_detector.launch"/>
+
+</launch>

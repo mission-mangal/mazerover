@@ -1,0 +1,11 @@
+
+Terminal 1
+$ roslaunch maze_bot_control maze1.launch
+
+
+Terminal 2
+$ rosbag record -a
+
+Terminal 3
+$ roslaunch maze_bot_control teleoperation.launch
+

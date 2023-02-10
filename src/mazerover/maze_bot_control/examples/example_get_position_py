@@ -1,0 +1,18 @@
+from control_utils import utils
+import rospy
+
+if __name__ == '__main__':
+    # Initializing the node
+    rospy.init_node("controller_node",anonymous=True)
+    controller = utils.Controller()
+
+    # Sleeping for 1 second
+    rospy.sleep(1)
+
+    # Printing the current location
+    while rospy.is_shutdown() is not True:
+        
+        location = controller.get_position()
+        print(location)
+        rospy.sleep(1)
+        

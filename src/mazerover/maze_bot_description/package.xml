@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>maze_bot_description</name>
+  <version>0.0.0</version>
+  <description>
+    URDF description package for Leo Rover(Maze Rover)
+  </description>
+    
+  <maintainer email="jagadeeshanmsj@gmail.com">jaga-matrix</maintainer>
+  <author email="jagadeeshanmsj@gmail.com">jaga-matrix</author>
+
+  <license>GPLv3</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>leo_description</exec_depend>
+
+</package>

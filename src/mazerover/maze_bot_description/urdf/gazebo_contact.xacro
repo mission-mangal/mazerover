@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:macro name="contact_sensor_wheel" params="name">
+        <gazebo reference="wheel_${name}_link">
+            <sensor name="wheel_${name}_link_contact_sensor" type="contact">
+                <update_rate>30.0</update_rate>
+                <always_on>true</always_on>
+                <contact>
+                    <collision>wheel_${name}_link_collision</collision>
+                </contact>
+                <plugin name="wheel_${name}_link" filename="libgazebo_ros_bumper.so">
+                    <bumperTopicName>collision</bumperTopicName>
+                    <frameName>wheel_${name}_link</frameName>
+                </plugin>
+            </sensor>
+        </gazebo>
+    </xacro:macro>
+    
+<!-- 
+    <xacro:macro name="contact_sensor" params="name">
+        <gazebo reference="${name}">
+            <sensor name="${name}_contact_sensor" type="contact">
+                <update_rate>4.0</update_rate>
+                <always_on>true</always_on>
+                <contact>
+                    <collision>${name}_collision</collision>
+                </contact>
+                <plugin name="${name}" filename="libgazebo_ros_bumper.so">
+                    <bumperTopicName>collision</bumperTopicName>
+                    <frameName>${name}</frameName>
+                </plugin>
+            </sensor>
+        </gazebo>
+    </xacro:macro> -->
+
+</robot>

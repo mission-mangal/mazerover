@@ -1,0 +1,3 @@
+<launch>
+    <node name="collision_detector_node" type="collision_detector.py" pkg="maze_bot_monitor" />
+</launch>

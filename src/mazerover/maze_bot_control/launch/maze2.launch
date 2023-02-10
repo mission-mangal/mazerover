@@ -1,0 +1,19 @@
+<launch>
+
+    <include file="$(find maze_bot_gazebo)/launch/leo_gazebo.launch"
+        pass_all_args="true">
+        <arg name="world_name" value="$(find maze_bot_gazebo)/worlds/maze2.world" />
+        <arg name="x" value="1" />
+        <arg name="y" value="1" />
+    </include>
+    
+    <include file="$(find maze_bot_viz)/launch/rviz.launch" />
+
+
+    <node name="ground_truth_filter"
+        pkg="maze_bot_gazebo"
+        type="ground_truth_filter">
+        <param name="x_offset" value="1" />
+        <param name="y_offset" value="1" />
+    </node>
+</launch>

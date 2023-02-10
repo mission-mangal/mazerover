@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>maze_bot_gazebo</name>
+  <version>0.0.0</version>
+  <description>
+    Launch files and other resources for simulating Leo Rover (Maze Rover) in Gazebo.
+  </description>
+
+  <maintainer email="jagadeeshanmsj@gmail.com">jaga-matrix</maintainer>
+  <author email="jagadeeshanmsj@gmail.com">jaga-matrix</author>
+
+  <license>GPLv3</license>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>gazebo_ros_control</exec_depend>
+  <exec_depend>gazebo_plugins</exec_depend>
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>joint_state_controller</exec_depend>
+  <exec_depend>diff_drive_controller</exec_depend>
+  <exec_depend>topic_tools</exec_depend>
+  <exec_depend>compressed_image_transport</exec_depend>
+  <exec_depend>rtabmap_ros</exec_depend>
+  <exec_depend>rostopic</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+
+  <exec_depend>python3-pykdl</exec_depend>
+
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+
+  <exec_depend>leo_gazebo_plugins</exec_depend>
+
+  <exec_depend>maze_bot_description</exec_depend>
+</package>

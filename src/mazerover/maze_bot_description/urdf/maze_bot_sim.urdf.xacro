@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro"
+    name="maze_bot_sim">
+
+    <xacro:arg name="fixed" default="false" />
+    <xacro:arg name="robot_ns" default="" />
+
+    <xacro:include filename="$(find maze_bot_description)/urdf/maze_bot.xacro" />
+
+    <xacro:maze_bot_sim robot_ns="$(arg robot_ns)"
+        fixed="$(arg fixed)" />
+
+    <xacro:include filename="$(find maze_bot_description)/urdf/gazebo_contact.xacro" />
+
+    <xacro:contact_sensor_wheel name="FL" />
+    <xacro:contact_sensor_wheel name="RL" />
+    <xacro:contact_sensor_wheel name="FR" />
+    <xacro:contact_sensor_wheel name="RR" />
+
+    <!-- <xacro:contact_sensor name="erc_payload_link" />
+    <xacro:contact_sensor name="zed2_camera_center" /> -->
+</robot>

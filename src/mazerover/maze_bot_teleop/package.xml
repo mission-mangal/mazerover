@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>maze_bot_teleop</name>
+  <version>0.0.0</version>
+  <description>The maze_bot_teleop package</description>
+
+  <maintainer email="jagadeeshanmsj@gmail.com">jaga-matrix</maintainer>
+  <author email="jagadeeshanmsj@gmail.com">jaga-matrix</author>
+
+  <license>GPLv3</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>joy</exec_depend>
+  <exec_depend>teleop_twist_joy</exec_depend>
+  <exec_depend>teleop_twist_keyboard</exec_depend>
+
+</package>
