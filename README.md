@@ -2,7 +2,7 @@
 ### Installation
 
 ```
-sudo apt install python3-rosdep python3-catkin-tools
+sudo apt install python3-rosdep python3-catkin-tools xterm
 git clone https://github.com/mission-mangal/mazerover.git
 cd mazerover
 catkin init
