@@ -2,6 +2,7 @@
 ### Installation
 
 ```
+sudo apt install python3-rosdep python3-catkin-tools
 git clone https://github.com/mission-mangal/mazerover.git
 cd mazerover
 catkin init
@@ -21,5 +22,7 @@ $ rosbag record -o rosbag /camera/camera_info /camera/image_raw /camera/image_ra
 ### Terminal 3
 $ roslaunch maze_bot_control teleoperation.launch
 
+
+# For Docker users
 
 
