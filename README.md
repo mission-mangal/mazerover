@@ -2,9 +2,8 @@
 ### Installation
 
 ```
-mkdir mazerover_ws
-cd mazerover_ws
 git clone https://github.com/mission-mangal/mazerover.git
+cd mazerover
 catkin init
 catkin build
 sudo apt install ros-noetic-leo-description ros-noetic-leo-gazebo-plugins
