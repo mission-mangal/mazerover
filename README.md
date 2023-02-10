@@ -17,7 +17,7 @@ $ roslaunch maze_bot_control maze1.launch
 
 
 ### Terminal 2
-$ rosbag record -o rosbag /camera/camera_info /camera/image_raw /camera/image_raw/compressed /camera/image_raw/compressed/parameter_descriptions /camera/image_raw/compressed/parameter_updates /camera/parameter_descriptions /camera/parameter_updates /cmd_vel /collision  /joint_states /ground_truth /tf /tf_static /rosout
+$ rosbag record -o rosbag /cmd_vel /collision  /joint_states /ground_truth /tf /tf_static /rosout
 
 ### Terminal 3
 $ roslaunch maze_bot_control teleoperation.launch
